@@ -1,0 +1,128 @@
+.nav__menu {
+  background-color: var(--first-color);
+  position: fixed;
+  inset-block: 0;
+  left: -100%;
+  width: 100%;
+  padding: 60px 30px;
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.show-menu {
+  left: 0;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  column-gap: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.nav--icon {
+  color: grey;
+  font-size: 24px;
+}
+.nav__link {
+  font-size: 24px;
+  color: grey;
+}
+
+.nav__link.active,
+.nav__link:hover,
+.nav--icon {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: grey;
+  padding: 12px 10px;
+}
+
+.nav__toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--first-color);
+  margin-bottom: 5px;
+}
+
+.animate-toggle span:first-child {
+  transform: rotate(45deg) translate(2px, 7px);
+  width: 30px;
+}
+.animate-toggle span:nth-child(2) {
+  display: none;
+}
+.animate-toggle span:last-child {
+  transform: rotate(-45deg) translate(-2px, -3px);
+  width: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__menu {
+    all: unset;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+  .nav {
+    position: fixed;
+    inset-block: 0;
+    right: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__item {
+    margin-block: 20px;
+    border-bottom: none;
+    position: relative;
+  }
+
+  .nav__link {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  .nav--icon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 28px;
+    color: white;
+    pointer-events: none;
+  }
+  .nav__name {
+    position: absolute;
+    height: 84%;
+    right: 0;
+    line-height: 49px;
+    padding-inline: 20px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+
+  .nav__link.active,
+  .nav__link:hover,
+  .nav__link:hover .nav__name {
+    background-color: var(--first-color);
+    visibility: visible;
+    color: white;
+    right: 35px;
+  }
+}
+
