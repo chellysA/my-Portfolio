@@ -1,8 +1,8 @@
 import React from 'react';
 import { album } from '../constants/album';
-import { HiCursorClick } from 'react-icons/hi';
 import './Pictures.css';
-// al hacer click cambie de foto
+import Slider from 'react-slick';
+
 const Pictures = () => {
   return (
     <>
@@ -10,10 +10,6 @@ const Pictures = () => {
         return (
           <div key={index}>
             <img src={src} alt={alt} className="style__img" />
-            <button className="button picture">
-              Click Me
-              <HiCursorClick className="pic__icon" />
-            </button>
           </div>
         );
       })}

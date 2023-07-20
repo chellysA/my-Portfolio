@@ -26,6 +26,7 @@
 .nav--icon {
   color: grey;
   font-size: 24px;
+  pointer-events: none;
 }
 .nav__link {
   font-size: 24px;
@@ -85,6 +86,7 @@
     right: 30px;
     display: flex;
     align-items: center;
+    z-index: 1000;
   }
 
   .nav__item {
@@ -107,7 +109,6 @@
     top: 15px;
     font-size: 28px;
     color: white;
-    pointer-events: none;
   }
   .nav__name {
     position: absolute;

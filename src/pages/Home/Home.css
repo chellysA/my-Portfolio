@@ -61,8 +61,7 @@
     z-index: -1;
   }
   .style__img {
-    max-width: 186px;
-    max-height: 170px;
+    max-width: 250px;
   }
   .home {
     display: block;

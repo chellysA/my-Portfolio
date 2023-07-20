@@ -1,0 +1,9 @@
+.style__logo {
+  max-height: 150px;
+}
+@media screen and (max-width: 768px) {
+  .style__logo {
+    max-height: 100px;
+  }
+}
+
