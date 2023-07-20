@@ -1,0 +1,10 @@
+.style__certifications {
+  max-width: 500px;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .style__certifications {
+    max-width: 270px;
+  }
+}
+

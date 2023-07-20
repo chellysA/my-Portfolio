@@ -2,8 +2,7 @@
 
 :root {
   --first-color: #984b43;
-  --second-color: #233237;
-  --title-color: #df744a;
+  --title-color: #444647;
   --text-color: grey;
   --body-color: rgb(255, 255, 255);
   --container-color: #fedcd2;
@@ -78,16 +77,15 @@ img:hover {
 }
 
 .section {
-  padding-block: 70px;
+  padding-block: 40px;
 }
 
 .section__title {
   font-size: var(--big-font-size);
   font-weight: var(--weight-800);
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
-
 .button {
   display: inline-block;
   color: var(--first-color);
