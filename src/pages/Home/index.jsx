@@ -4,8 +4,6 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-// Add type animation to the home__title
-
 const Home = () => {
   return (
     <section className="home section grid">
