@@ -1,6 +1,6 @@
 .portfolio__container {
   grid-template-columns: repeat(2, 1fr);
-  margin: 85px;
+  margin-inline: 160px;
 }
 .portfolio__item {
   position: relative;
