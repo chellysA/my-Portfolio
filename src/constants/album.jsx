@@ -1,11 +1,11 @@
-import chellys from '../assets/chellys.jpg';
-import chellys1 from '../assets/chellys1.png';
-import chellys2 from '../assets/chellys2.jpg';
-import chellys3 from '../assets/chellys3.jpg';
-import chellys4 from '../assets/chellys4.png';
-import chellys5 from '../assets/chellys5.jpg';
-import civil from '../assets/civil.jpg';
-import boda from '../assets/boda.jpg';
+import chellys from '../assets/photos/chellys.jpg';
+import chellys1 from '../assets/photos/chellys1.png';
+import chellys2 from '../assets/photos/chellys2.jpg';
+import chellys3 from '../assets/photos/chellys3.jpg';
+import chellys4 from '../assets/photos/chellys4.png';
+import chellys5 from '../assets/photos/chellys5.jpg';
+import civil from '../assets/photos/civil.jpg';
+import boda from '../assets/photos/boda.jpg';
 
 export const album = [
   {

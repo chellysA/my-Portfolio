@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import mifoto from '../../assets/mifoto.png';
+import mifoto from '../../assets/photos/mifoto.png';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Home.css';
