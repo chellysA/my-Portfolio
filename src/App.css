@@ -4,8 +4,9 @@
   --first-color: #984b43;
   --title-color: #444647;
   --text-color: grey;
+  --text-white: white;
   --body-color: rgb(255, 255, 255);
-  --container-color: #fedcd2;
+  --container-color: #f0e8e7;
   --container-second-color: #8fd8d2;
   --body-font: 'Roboto', sans-serif;
   --second-font: 'Fasthand', cursive;
@@ -37,7 +38,7 @@ textarea {
 }
 
 body {
-  background-color: white;
+  background-color: var(--body-color);
   color: var(--text-color);
 }
 
@@ -101,7 +102,7 @@ img:hover {
 }
 
 .button:hover {
-  color: white;
+  color: var(--text-white);
 }
 
 .button::before {
@@ -125,7 +126,7 @@ img:hover {
   right: 0px;
   width: 65px;
   border-radius: 50px;
-  color: white;
+  color: var(--text-white);
   font-size: 20px;
   text-align: center;
   line-height: 70px;

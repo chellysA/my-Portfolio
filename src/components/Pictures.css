@@ -3,7 +3,7 @@
   left: 190px;
   top: 625px;
   padding: 10px 20px;
-  color: white;
+  color: var(--text-white);
   border: 1px solid white;
 }
 .picture:hover {
@@ -16,5 +16,6 @@
 
 .style__img {
   max-height: 75%;
+  margin-block: 19px;
 }
 
