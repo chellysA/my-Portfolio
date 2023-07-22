@@ -72,7 +72,7 @@
   width: 30px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   .nav__menu {
     all: unset;
   }

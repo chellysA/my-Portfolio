@@ -16,7 +16,7 @@
 .home__data {
   max-width: 600px;
   margin-inline: auto;
-  padding-top: 20px;
+  padding-right: 40px;
 }
 
 .home__title span {
@@ -56,7 +56,7 @@
   left: -83%;
   transform: rotate(-15deg);
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 880px) {
   .color__block {
     z-index: -1;
   }

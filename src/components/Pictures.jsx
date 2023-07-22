@@ -1,7 +1,6 @@
 import React from 'react';
 import { album } from '../constants/album';
 import './Pictures.css';
-import Slider from 'react-slick';
 
 const Pictures = () => {
   return (

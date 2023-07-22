@@ -5,6 +5,7 @@ import './About.css';
 import Pictures from '../../components/Pictures';
 import Skills from '../../components/Skills';
 import Education from '../../components/Education';
+import cvChellysCastillo from '../../assets/cv/cvChellysCastillo.pdf';
 
 const About = () => {
   return (
@@ -20,14 +21,14 @@ const About = () => {
             <ul className="list__info grid">
               <Info />
             </ul>
-            {/*<div>
-              <a href="" download="" className="button">
+            <div>
+              <a href={cvChellysCastillo} download="cvChellysCastillo" className="button">
                 Download CV
                 <span className="button__icon">
                   <FaDownload />
                 </span>
               </a>
-  </div>*/}
+            </div>
           </div>
         </div>
       </section>
