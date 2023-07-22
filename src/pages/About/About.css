@@ -1,6 +1,7 @@
 .about__container {
   grid-template-columns: 1.8fr 4fr;
   gap: 25px;
+  padding-inline: 20px;
 }
 .info__item {
   margin-bottom: 40px;
@@ -43,7 +44,7 @@
   margin: 72px auto 56px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 880px) {
   .about__container {
     display: flex;
     flex-direction: column;

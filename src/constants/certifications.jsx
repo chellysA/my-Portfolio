@@ -2,6 +2,7 @@ import responsiveWebDesign from '../assets/certifications/responsiveWebDesign.pn
 import javascript from '../assets/certifications/javascript.png';
 import frontEnd from '../assets/certifications/frontEnd.png';
 import bilingual from '../assets/certifications/bilingual.jpg';
+import bachiller from '../assets/certifications/bachiller.jpg';
 
 const certifications = [
   {
@@ -24,6 +25,11 @@ const certifications = [
     id: 4,
     src: bilingual,
     alt: 'bilingual',
+  },
+  {
+    id: 5,
+    src: bachiller,
+    alt: 'bachiller',
   },
 ];
 

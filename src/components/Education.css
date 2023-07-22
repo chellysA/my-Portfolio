@@ -2,6 +2,10 @@
   max-width: 500px;
   margin: auto;
 }
+.slick-slide .style__certifications {
+  display: block;
+  max-height: 400px;
+}
 @media screen and (max-width: 768px) {
   .style__certifications {
     max-width: 270px;

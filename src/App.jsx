@@ -1,4 +1,4 @@
-import { Switch, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import React from 'react';
@@ -8,9 +8,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <Switch>
-        <Routes />
-      </Switch>
+      <Routes />
     </Router>
   );
 }

@@ -33,11 +33,11 @@
   font-weight: var(--weight-500);
   transform: translateY(-20px);
   transition: all 0.5s ease;
+  text-align: center;
 }
 .portfolio__item:hover .portfolio__title {
   transform: translateY(0);
 }
-
 .modal__title {
   text-align: center;
   color: var(--first-color);

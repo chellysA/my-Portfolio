@@ -27,12 +27,12 @@ const NavBar = () => {
               <h3 className="nav__name">Portfolio</h3>
             </NavLink>
           </li>
-          <li className="nav__item">
+          {/*<li className="nav__item">
             <FaEnvelopeOpen className="nav--icon" />
             <NavLink to="/contact" className="nav__link" onClick={() => setShowMenu(!showMenu)}>
               <h3 className="nav__name">Contact</h3>
             </NavLink>
-          </li>
+  </li>*/}
         </ul>
       </div>
 
