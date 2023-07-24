@@ -18,7 +18,9 @@
 .nav__item {
   display: flex;
   align-items: center;
-  height: 60px;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
   column-gap: 10px;
   border-bottom: 1px solid grey;
 }
@@ -27,16 +29,6 @@
   color: var(--text-color);
   font-size: 24px;
   pointer-events: none;
-}
-.nav__link {
-  font-size: 24px;
-  color: var(--text-color);
-}
-
-.nav__link.active,
-.nav__link:hover,
-.nav--icon {
-  color: var(--first-color);
 }
 
 .nav__toggle {
@@ -91,29 +83,19 @@
 
   .nav__item {
     margin-block: 20px;
-    border-bottom: none;
     position: relative;
-  }
-
-  .nav__link {
+    color: var(--text-white);
     background-color: var(--text-color);
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
-    opacity: 1;
   }
 
   .nav--icon {
-    position: absolute;
-    right: 10px;
-    top: 15px;
-    font-size: 28px;
     color: var(--text-white);
   }
   .nav__name {
     position: absolute;
-    height: 84%;
     right: 0;
+    width: 50px;
     line-height: 49px;
     padding-inline: 20px 20px;
     border-radius: 30px;
@@ -121,15 +103,18 @@
     visibility: hidden;
     z-index: -1;
     transition: all 0.3s ease;
+    background-color: var(--first-color);
+    color: var(--text-white);
   }
 
-  .nav__link.active,
-  .nav__link:hover,
-  .nav__link:hover .nav__name {
-    background-color: var(--first-color);
+  .nav__item:hover .nav__name {
     visibility: visible;
-    color: var(--text-white);
     right: 35px;
+    width: auto;
+  }
+
+  .nav__item:hover {
+    background-color: var(--first-color);
   }
 }
 
