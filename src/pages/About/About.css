@@ -43,7 +43,6 @@
   max-width: 50%;
   margin: 72px auto 56px;
 }
-
 @media screen and (max-width: 880px) {
   .about__container {
     display: flex;
