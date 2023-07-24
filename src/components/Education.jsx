@@ -12,6 +12,7 @@ const Education = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
+    arrows: false,
   };
   return (
     <div>

@@ -15,6 +15,7 @@ const Skills = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: 'linear',
+    arrows: false,
   };
   return (
     <div>
