@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Education.css';
-import certifications from '../constants/certifications';
+import certifications from '../../constants/certifications';
 const Education = () => {
   const settings = {
     dots: true,

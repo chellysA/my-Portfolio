@@ -9,24 +9,24 @@ const NavBar = () => {
     <nav className="nav">
       <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
         <ul>
-          <NavLink exact to="/" className="nav__link" onClick={() => setShowMenu(!showMenu)}>
-            <li className="nav__item">
-              <FaHome className="nav--icon" />
+          <li className="nav__item">
+            <FaHome className="nav--icon" />
+            <NavLink exact to="/" className="nav__link" onClick={() => setShowMenu(!showMenu)}>
               <h3 className="nav__name">Home</h3>
-            </li>
-          </NavLink>
-          <NavLink to="/about" className="nav__link" onClick={() => setShowMenu(!showMenu)}>
-            <li className="nav__item">
-              <FaUser className="nav--icon" />
+            </NavLink>
+          </li>
+          <li className="nav__item">
+            <FaUser className="nav--icon" />
+            <NavLink to="/about" className="nav__link" onClick={() => setShowMenu(!showMenu)}>
               <h3 className="nav__name">About</h3>
-            </li>
-          </NavLink>
-          <NavLink to="/portfolio" className="nav__link" onClick={() => setShowMenu(!showMenu)}>
-            <li className="nav__item">
-              <FaFolderOpen className="nav--icon" />
+            </NavLink>
+          </li>
+          <li className="nav__item">
+            <FaFolderOpen className="nav--icon" />
+            <NavLink to="/portfolio" className="nav__link" onClick={() => setShowMenu(!showMenu)}>
               <h3 className="nav__name">Portfolio</h3>
-            </li>
-          </NavLink>
+            </NavLink>
+          </li>
           {/*<li className="nav__item">
             <FaEnvelopeOpen className="nav--icon" />
             <NavLink to="/contact" className="nav__link" onClick={() => setShowMenu(!showMenu)}>

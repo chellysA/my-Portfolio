@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from './Modal';
+import Modal from '../Modal';
 import parse from 'html-react-parser';
 
 const ProjectItem = ({ img, title, details }) => {

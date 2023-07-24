@@ -1,6 +1,6 @@
 import React, { Children } from 'react';
 import './Modal.css';
-import closeIcon from '../assets/logos/closeIcon.png';
+import closeIcon from '../../assets/logos/closeIcon.png';
 
 const Modal = ({ children, onClose, isOpen }) => {
   return (
