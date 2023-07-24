@@ -1,5 +1,5 @@
 import React from 'react';
-import { album } from '../constants/album';
+import { album } from '../../constants/album';
 import './Pictures.css';
 
 const Pictures = () => {

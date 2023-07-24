@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { logos } from '../constants/logos';
+import { logos } from '../../constants/logos';
 import './Skills.css';
 
 const Skills = () => {
