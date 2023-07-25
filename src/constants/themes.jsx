@@ -11,18 +11,18 @@ import pRed from '../assets/paleta-de-colores/pRed.png';
 import pYellow from '../assets/paleta-de-colores/pYellow.png';
 import pPurple from '../assets/paleta-de-colores/pPurple.png';
 
-export const theme = [
-  { id: 1, img: aquamarine, color: 'aquemarine' },
+export const themes = [
+  { id: 1, img: aquamarine, color: 'aqua' },
   { id: 2, img: blue, color: 'blue' },
   { id: 3, img: green, color: 'green' },
   { id: 4, img: red, color: 'red' },
   { id: 5, img: yellow, color: 'yellow' },
   { id: 6, img: purple, color: 'purple' },
-  { id: 7, img: pAquamarine, color: 'pastel Aquamrine' },
-  { id: 8, img: pBlue, color: 'pastel Blue' },
-  { id: 9, img: pGreen, color: 'pastel Green' },
-  { id: 10, img: pRed, color: 'pastel Red' },
-  { id: 11, img: pYellow, color: 'pastel Yellow' },
-  { id: 12, img: pPurple, color: 'pastel Purple' },
+  { id: 7, img: pAquamarine, color: 'pastelAqua' },
+  { id: 8, img: pBlue, color: 'pastelBlue' },
+  { id: 9, img: pGreen, color: 'pastelGreen' },
+  { id: 10, img: pRed, color: 'pastelRed' },
+  { id: 11, img: pYellow, color: 'pastelYellow' },
+  { id: 12, img: pPurple, color: 'pastelPurple' },
 ];
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --first-color: #984b43;
+  --first-color: #f43444;
   --title-color: #444647;
   --text-color: grey;
   --text-white: white;
@@ -23,6 +23,43 @@
   --weight-800: 800;
 }
 
+body.aqua {
+  --first-color: #08fcd4;
+}
+body.purple {
+  --first-color: #b44cb4;
+}
+body.blue {
+  --first-color: #04a4fc;
+}
+body.green {
+  --first-color: #acfc04;
+}
+body.yellow {
+  --first-color: #fccc04;
+}
+body.red {
+  --first-color: #f43444;
+}
+body.pastelAqua {
+  --first-color: #a4d4cc;
+}
+body.pastelPurple {
+  --first-color: #d4b4d4;
+}
+body.pastelGreen {
+  --first-color: #dcf48c;
+}
+body.pastelRed {
+  --first-color: #fc7454;
+}
+
+body.pastelYellow {
+  --first-color: #fcdc74;
+}
+body.pastelBlue {
+  --first-color: #b4ccdc;
+}
 * {
   margin: 0;
   padding: 0;
