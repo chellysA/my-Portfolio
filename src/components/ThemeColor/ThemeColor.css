@@ -5,14 +5,7 @@
   grid-template-columns: repeat(4, 1fr);
   margin-inline: auto;
   place-items: center;
-}
-.theme__title {
-  color: var(--text-color);
-  font-size: var(--h2-font-size);
-  text-align: center;
-}
-.span__color {
-  color: var(--first-color);
+  padding-top: 10px;
 }
 .toggle__theme {
   position: fixed;
@@ -22,13 +15,25 @@
   border-radius: 0px 5px 5px 0px;
   border: 1px solid var(--text-color);
   box-shadow: rgba(0, 0, 0, 0.75) 2px 2px 9px 0px;
+  cursor: pointer;
 }
-.toggle__theme:hover .icon {
+.theme__title {
+  color: var(--text-color);
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
+.span__color {
   color: var(--first-color);
 }
 .icon {
   width: 30px;
   height: 30px;
   color: var(--text-color);
+}
+.theme__img {
+  cursor: pointer;
+}
+.toggle__theme:hover .icon {
+  color: var(--first-color);
 }
 

@@ -33,7 +33,7 @@ const ProjectItem = ({ img, title, details }) => {
             );
           })}
         </ul>
-        <img src={img} alt="" className="modal__img" />
+        <img src={img} alt="" />
       </Modal>
     </div>
   );
