@@ -3,13 +3,15 @@ import './App.css';
 import NavBar from './components/NavBar';
 import React from 'react';
 import Routes from './root/Routes';
-import Theme from './components/Theme';
+import ThemeColor from './components/ThemeColor';
+import Mode from './components/Mode';
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <Theme />
+      <ThemeColor />
+      <Mode />
       <Routes />
     </Router>
   );

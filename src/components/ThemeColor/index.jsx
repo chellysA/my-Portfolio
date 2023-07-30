@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
-import './Theme.css';
+import './ThemeColor.css';
 import { themes } from '../../constants/themes';
 import { IoMdColorPalette } from 'react-icons/io';
 import Modal from '../Modal';
+import ThemeButton from '../ThemeButton';
 
-const Theme = () => {
+const ThemeColor = () => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
     setModal(!modal);
   };
   const selectColor = (color) => {
-    console.log(document.querySelector('body'));
     document.querySelector('body').className = '';
     document.querySelector('body').classList.add(color);
   };
   return (
     <>
-      <div className="toggle__theme" onClick={toggleModal}>
-        <IoMdColorPalette className="icon" />
-      </div>
+      <ThemeButton
+        className="toggle__theme"
+        onClickTheme={toggleModal}
+        icon={<IoMdColorPalette className="icon" />}
+      />
       <Modal isOpen={modal} onClose={toggleModal}>
         <h2 className="theme__title">
           Choose a <span className="span__color">color</span>
@@ -28,7 +30,7 @@ const Theme = () => {
           {themes.map(({ img, color }, index) => {
             return (
               <div key={index} onClick={() => selectColor(color)}>
-                <img src={img} alt={color} />
+                <img src={img} alt={color} className="theme__img" />
               </div>
             );
           })}
@@ -37,5 +39,5 @@ const Theme = () => {
     </>
   );
 };
-export default Theme;
+export default ThemeColor;
 

@@ -22,7 +22,9 @@
   --weight-700: 700;
   --weight-800: 800;
 }
-
+body.dark {
+  --body-color: black;
+}
 body.aqua {
   --first-color: #08fcd4;
 }
