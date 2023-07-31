@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Modal from '../Modal';
 import parse from 'html-react-parser';
 
@@ -8,7 +8,6 @@ const ProjectItem = ({ img, title, details }) => {
   const toggleModal = () => {
     setModal(!modal);
   };
-
   return (
     <div className="portfolio__item">
       <img src={img} alt="" className="portfilio__img" />

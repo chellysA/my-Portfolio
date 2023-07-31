@@ -3,9 +3,6 @@ import './Modal.css';
 import closeIcon from '../../assets/logos/closeIcon.png';
 
 const Modal = ({ children, onClose, isOpen }) => {
-  useEffect(() => {
-    document.querySelector('body').classList.add('stop__scrolling');
-  }, [isOpen]);
   return (
     <>
       {isOpen && (
