@@ -1,10 +1,12 @@
-import React, { Children } from 'react';
+import React, { Children, useEffect } from 'react';
 import './Modal.css';
 import closeIcon from '../../assets/logos/closeIcon.png';
 
+useEffect(() => {
+  document.querySelector('body').classList.add('stop__scrolling');
+}, [isOpen]);
+
 const Modal = ({ children, onClose, isOpen }) => {
-  isOpen && document.querySelector('body').classList.add('stop__scrolling');
-  !isOpen && document.querySelector('body').classList.remove('stop__scrolling');
   return (
     <>
       {isOpen && (
