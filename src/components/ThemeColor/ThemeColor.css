@@ -18,7 +18,6 @@
   cursor: pointer;
 }
 .theme__title {
-  color: var(--text-color);
   font-size: var(--h2-font-size);
   text-align: center;
 }

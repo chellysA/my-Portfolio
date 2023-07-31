@@ -9,8 +9,11 @@ const Mode = () => {
 
   const switchMode = () => {
     setMode(!mode);
-    document.querySelector('body').className = '';
-    !mode && document.querySelector('body').classList.add('dark');
+    if (!mode) {
+      document.querySelector('body').classList.add('dark');
+    } else {
+      document.querySelector('body').classList.replace('dark', 'light');
+    }
   };
 
   return (
