@@ -17,9 +17,7 @@
   position: relative;
   border: 1px solid white;
 }
-.stop__scrolling {
-  overflow: hidden;
-}
+
 .modal__close {
   position: absolute;
   top: 1%;
