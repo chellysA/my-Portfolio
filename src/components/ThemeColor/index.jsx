@@ -11,9 +11,19 @@ const ThemeColor = () => {
   const toggleModal = () => {
     setModal(!modal);
   };
+
   const selectColor = (color) => {
-    document.querySelector('body').className = '';
-    document.querySelector('body').classList.add(color);
+    if (document.querySelector('body').classList.contains('dark')) {
+      document.querySelector('body').className = '';
+      document.querySelector('body').classList.add(color, 'dark');
+    }
+    if (
+      document.querySelector('body').classList.contains('light') ||
+      document.querySelector('body').className == ''
+    ) {
+      document.querySelector('body').className = '';
+      document.querySelector('body').classList.add(color, 'light');
+    }
   };
   return (
     <>

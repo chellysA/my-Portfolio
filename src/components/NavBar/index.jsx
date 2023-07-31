@@ -16,13 +16,17 @@ const NavBar = () => {
             onClick={() => setShowMenu(!showMenu)}>
             <li className="nav__item">
               <FaHome className="nav--icon" />
-              <h3 className="nav__name">Home</h3>
+              <div className="nav__name__box">
+                <h3 className="nav__name">Home</h3>
+              </div>
             </li>
           </NavLink>
           <NavLink to="/about" activeClassName="active_link" onClick={() => setShowMenu(!showMenu)}>
             <li className="nav__item">
               <FaUser className="nav--icon icon-user" />
-              <h3 className="nav__name">About</h3>
+              <div className="nav__name__box">
+                <h3 className="nav__name">Home</h3>
+              </div>
             </li>
           </NavLink>
           <NavLink
@@ -31,7 +35,9 @@ const NavBar = () => {
             onClick={() => setShowMenu(!showMenu)}>
             <li className="nav__item">
               <FaFolderOpen className="nav--icon" />
-              <h3 className="nav__name">Portfolio</h3>
+              <div className="nav__name__box">
+                <h3 className="nav__name">Home</h3>
+              </div>
             </li>
           </NavLink>
           {/*  <NavLink to="/contact"   activeClassName="active_link" onClick={() => setShowMenu(!showMenu)}>
