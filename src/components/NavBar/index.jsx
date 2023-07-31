@@ -25,7 +25,7 @@ const NavBar = () => {
             <li className="nav__item">
               <FaUser className="nav--icon icon-user" />
               <div className="nav__name__box">
-                <h3 className="nav__name">Home</h3>
+                <h3 className="nav__name">About</h3>
               </div>
             </li>
           </NavLink>
@@ -36,7 +36,7 @@ const NavBar = () => {
             <li className="nav__item">
               <FaFolderOpen className="nav--icon" />
               <div className="nav__name__box">
-                <h3 className="nav__name">Home</h3>
+                <h3 className="nav__name">Portfolio</h3>
               </div>
             </li>
           </NavLink>
