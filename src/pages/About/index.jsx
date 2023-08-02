@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Info from '../../components/Info';
 import { FaDownload } from 'react-icons/fa';
 import './About.css';
@@ -8,6 +8,9 @@ import Education from '../../components/Education';
 import cvChellysCastillo from '../../assets/cv/cvChellysCastillo.pdf';
 
 const About = () => {
+  useEffect(() => {
+    window.localStorage.removeItem('soy-el-key');
+  });
   return (
     <main className="section container">
       <section className="about">

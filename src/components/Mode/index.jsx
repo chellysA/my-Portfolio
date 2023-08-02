@@ -1,27 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import ThemeButton from '../ThemeButton';
 import { MdDarkMode } from 'react-icons/md';
 import { CiLight } from 'react-icons/ci';
 import './Mode.css';
+import ThemeContext from '../../context/ThemeContext';
 
 const Mode = () => {
-  const [mode, setMode] = useState(false);
-
-  const switchMode = () => {
-    setMode(!mode);
-    if (!mode) {
-      document.querySelector('body').classList.add('dark');
-    } else {
-      document.querySelector('body').classList.replace('dark', 'light');
-    }
-  };
+  const { isDark, handleIsDark } = useContext(ThemeContext);
 
   return (
     <>
       <ThemeButton
         className="mode"
-        onClickTheme={switchMode}
-        icon={mode ? <CiLight className="icon sun" /> : <MdDarkMode className="icon moon" />}
+        onClickTheme={handleIsDark}
+        icon={isDark ? <CiLight className="icon sun" /> : <MdDarkMode className="icon moon" />}
       />
     </>
   );
