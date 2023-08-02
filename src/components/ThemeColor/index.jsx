@@ -1,38 +1,22 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './ThemeColor.css';
 import { themes } from '../../constants/themes';
 import { IoMdColorPalette } from 'react-icons/io';
 import Modal from '../Modal';
 import ThemeButton from '../ThemeButton';
+import ThemeContext from '../../context/ThemeContext';
 
 const ThemeColor = () => {
-  const [modal, setModal] = useState(false);
+  const { modalColor, handleModalColor, selectColor } = useContext(ThemeContext);
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  const selectColor = (color) => {
-    if (document.querySelector('body').classList.contains('dark')) {
-      document.querySelector('body').className = '';
-      document.querySelector('body').classList.add(color, 'dark');
-    }
-    if (
-      document.querySelector('body').classList.contains('light') ||
-      document.querySelector('body').className == ''
-    ) {
-      document.querySelector('body').className = '';
-      document.querySelector('body').classList.add(color, 'light');
-    }
-  };
   return (
     <>
       <ThemeButton
         className="toggle__theme"
-        onClickTheme={toggleModal}
+        onClickTheme={handleModalColor}
         icon={<IoMdColorPalette className="icon" />}
       />
-      <Modal isOpen={modal} onClose={toggleModal}>
+      <Modal isOpen={modalColor} onClose={handleModalColor}>
         <h2 className="theme__title">
           Choose a <span className="span__color">color</span>
         </h2>
