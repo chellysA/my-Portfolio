@@ -7,10 +7,7 @@ import Skills from '../../components/Skills';
 import Education from '../../components/Education';
 import cvChellysCastillo from '../../assets/cv/cvChellysCastillo.pdf';
 
-const About = () => {
-  useEffect(() => {
-    window.localStorage.removeItem('soy-el-key');
-  });
+const About: React.FC = () => {
   return (
     <main className="section container">
       <section className="about">

@@ -3,7 +3,7 @@ import { projects } from '../../constants/projects';
 import ProjectItem from '../../components/ProjectItem';
 import './Portfolio.css';
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
   return (
     <section className="portfolio section">
       <h2 className="section__title">

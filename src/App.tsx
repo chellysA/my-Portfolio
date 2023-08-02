@@ -1,7 +1,6 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
-import React, { useEffect } from 'react';
 import Routes from './root/Routes';
 import ThemeColor from './components/ThemeColor';
 import Mode from './components/Mode';

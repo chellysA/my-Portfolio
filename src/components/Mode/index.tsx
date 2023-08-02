@@ -5,7 +5,7 @@ import { CiLight } from 'react-icons/ci';
 import './Mode.css';
 import ThemeContext from '../../context/ThemeContext';
 
-const Mode = () => {
+const Mode: React.FC = () => {
   const { isDark, handleIsDark } = useContext(ThemeContext);
 
   return (

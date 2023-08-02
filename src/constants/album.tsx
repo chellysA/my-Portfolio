@@ -7,7 +7,12 @@ import chellys5 from '../assets/photos/chellys5.jpg';
 import civil from '../assets/photos/civil.jpg';
 import boda from '../assets/photos/boda.jpg';
 
-export const album = [
+interface AlbumProps {
+  id: number;
+  src: string;
+  alt: string;
+}
+export const album: AlbumProps[] = [
   {
     id: 1,
     src: chellys,

@@ -2,28 +2,27 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { logos } from '../../constants/logos';
-import './Skills.css';
+import './Education.css';
+import certifications from '../../constants/certifications';
 
-const Skills = () => {
+const Education: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: 'linear',
+    centerMode: true,
     arrows: false,
   };
+
   return (
     <div>
       <Slider {...settings}>
-        {logos.map(({ src, alt }, index) => {
+        {certifications.map(({ src, alt }, index) => {
           return (
             <div key={index}>
-              <img src={src} alt={alt} className="style__logo" />
+              <img src={src} alt={alt} className="style__certifications" />
             </div>
           );
         })}
@@ -32,5 +31,5 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Education;
 

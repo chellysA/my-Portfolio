@@ -1,13 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Modal from '../Modal';
 import parse from 'html-react-parser';
 
-const ProjectItem = ({ img, title, details }) => {
-  const [modal, setModal] = useState(false);
+interface ProjectItemProps {
+  img: string;
+  title: string;
+  details: { icon: React.JSX.Element; title: string; desc: string }[];
+}
+
+const ProjectItem = ({ img, title, details }: ProjectItemProps) => {
+  const [modal, setModal] = useState<boolean>(false);
 
   const toggleModal = () => {
     setModal(!modal);
   };
+
   return (
     <div className="portfolio__item">
       <img src={img} alt="" className="portfilio__img" />

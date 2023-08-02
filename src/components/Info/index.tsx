@@ -2,7 +2,7 @@ import React from 'react';
 import { personalInfo1, personalInfo2 } from '../../constants/personalInfo';
 import './Info.css';
 
-const Info = () => {
+const Info: React.FC = () => {
   return (
     <>
       <div>

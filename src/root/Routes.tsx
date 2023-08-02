@@ -7,11 +7,11 @@ import Lost from '../pages/Lost';
 //import Contact from '../pages/Contact';
 
 const Routes = () => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   let location = useLocation();
 
   useEffect(() => {
-    scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+    scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [location]);
   return (
     <div ref={scrollRef}>

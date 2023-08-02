@@ -3,7 +3,7 @@ import lostImg from '../../assets/logos/lostImg.png';
 import { FaArrowRight } from 'react-icons/fa';
 import './Lost.css';
 
-const Lost = () => {
+const Lost: React.FC = () => {
   return (
     <section className="Lost section">
       <img src={lostImg} alt="profile picture" className="lost__img" />

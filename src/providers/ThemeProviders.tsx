@@ -1,21 +1,26 @@
-import { useEffect, useState } from 'react';
-import ThemeContext from '../context/ThemeContext';
+import { ReactNode, useEffect, useState } from 'react';
+import ThemeContext, { TSelectColor } from '../context/ThemeContext';
 
 const DARK = 'dark';
 const LIGHT = 'light';
 const KEY_MODE = 'mode';
 const KEY_THEME = 'themeColor';
 
-const ThemeProviders = ({ children }) => {
+interface IThemeProvidersProps {
+  children?: ReactNode;
+  selectColor?: TSelectColor;
+}
+
+const ThemeProviders = ({ children }: IThemeProvidersProps) => {
   const [isDark, setIsDark] = useState(false);
   const [modalColor, setModalColor] = useState(false);
 
   const handleIsDark = () => {
     if (!isDark) {
-      document.querySelector('body').classList.add(DARK);
+      document.querySelector('body')?.classList.add(DARK);
       window.localStorage.setItem(KEY_MODE, DARK);
     } else {
-      document.querySelector('body').classList.replace(DARK, LIGHT);
+      document.querySelector('body')?.classList.replace(DARK, LIGHT);
       window.localStorage.setItem(KEY_MODE, LIGHT);
     }
     setIsDark(!isDark);
@@ -25,14 +30,18 @@ const ThemeProviders = ({ children }) => {
     setModalColor(!modalColor);
   };
 
-  const selectColor = (color) => {
+  const selectColor: TSelectColor = (color) => {
+    const body = document.querySelector('body');
+    if (!body) {
+      return;
+    }
     if (isDark) {
-      document.querySelector('body').className = '';
-      document.querySelector('body').classList.add(color, DARK);
+      body.className = '';
+      body.classList.add(color, DARK);
       window.localStorage.setItem(KEY_THEME, color);
     } else {
-      document.querySelector('body').className = '';
-      document.querySelector('body').classList.add(color, LIGHT);
+      body.className = '';
+      body.classList.add(color, LIGHT);
       window.localStorage.setItem(KEY_THEME, color);
     }
   };
@@ -40,12 +49,18 @@ const ThemeProviders = ({ children }) => {
   useEffect(() => {
     const mode = window.localStorage.getItem(KEY_MODE);
     const color = window.localStorage.getItem(KEY_THEME);
+
     if (mode === DARK) {
       setIsDark(true);
     } else {
       setIsDark(false);
     }
-    document.querySelector('body').classList.add(mode, color);
+
+    if (mode && color) {
+      document.querySelector('body')?.classList.add(mode, color);
+    } else {
+      document.querySelector('body')?.classList.add(LIGHT, 'red');
+    }
   });
 
   return (

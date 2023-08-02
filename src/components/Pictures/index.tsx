@@ -2,7 +2,7 @@ import React from 'react';
 import { album } from '../../constants/album';
 import './Pictures.css';
 
-const Pictures = () => {
+const Pictures: React.FC = () => {
   return (
     <>
       {album.map(({ src, alt }, index) => {

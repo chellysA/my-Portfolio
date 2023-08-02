@@ -11,7 +11,13 @@ import pRed from '../assets/paleta-de-colores/pRed.png';
 import pYellow from '../assets/paleta-de-colores/pYellow.png';
 import pPurple from '../assets/paleta-de-colores/pPurple.png';
 
-export const themes = [
+interface ThemesProps {
+  id: Number;
+  img: string;
+  color: string;
+}
+
+export const themes: ThemesProps[] = [
   { id: 1, img: aquamarine, color: 'aqua' },
   { id: 2, img: blue, color: 'blue' },
   { id: 3, img: green, color: 'green' },
