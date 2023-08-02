@@ -3,8 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen } from 'react-icons/fa';
 import './NavBar.css';
 
-const NavBar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+const NavBar: React.FC = () => {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+
   return (
     <nav className="nav">
       <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>

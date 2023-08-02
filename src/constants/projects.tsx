@@ -6,7 +6,14 @@ import surveyForm from '../assets/projects-img/surveyForm.png';
 import { FiExternalLink, FiFileText } from 'react-icons/fi';
 import { FaCode } from 'react-icons/fa';
 
-export const projects = [
+interface ProjectsProps {
+  id: number;
+  img: string;
+  title: string;
+  details: { icon: React.JSX.Element; title: string; desc: string }[];
+}
+
+export const projects: ProjectsProps[] = [
   {
     id: 1,
     img: quoteRandomMachine,

@@ -1,8 +1,14 @@
-import React, { Children, useEffect } from 'react';
+import React, { ReactNode } from 'react';
 import './Modal.css';
 import closeIcon from '../../assets/logos/closeIcon.png';
 
-const Modal = ({ children, onClose, isOpen }) => {
+interface ModalProps {
+  children?: ReactNode;
+  onClose: () => void;
+  isOpen: boolean;
+}
+
+const Modal = ({ children, onClose, isOpen }: ModalProps) => {
   return (
     <>
       {isOpen && (

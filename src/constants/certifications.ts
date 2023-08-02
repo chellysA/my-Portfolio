@@ -4,7 +4,13 @@ import frontEnd from '../assets/certifications/frontEnd.png';
 import bilingual from '../assets/certifications/bilingual.jpg';
 import bachiller from '../assets/certifications/bachiller.jpg';
 
-const certifications = [
+interface CertificationsProps {
+  id: Number;
+  src: string;
+  alt: string;
+}
+
+const certifications: CertificationsProps[] = [
   {
     id: 1,
     src: frontEnd,

@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <section className="home section grid">
       <img src={mifoto} alt="profile picture" className="style__img" />

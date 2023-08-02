@@ -6,7 +6,15 @@ import github from '../assets/logos/github.png';
 import npm from '../assets/logos/npm.png';
 import vscode from '../assets/logos/vscode.png';
 import hookform from '../assets/logos/hookform.png';
-export const logos = [
+import typescript from '../assets/logos/typescript.png';
+
+interface LogosProps {
+  id: number;
+  src: string;
+  alt: string;
+}
+
+const logos: LogosProps[] = [
   {
     id: 1,
     src: html,
@@ -43,5 +51,12 @@ export const logos = [
     src: hookform,
     alt: 'hookform',
   },
+  {
+    id: 9,
+    src: typescript,
+    alt: 'typescript',
+  },
 ];
+
+export default logos;
 

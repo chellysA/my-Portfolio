@@ -1,5 +1,12 @@
 import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen } from 'react-icons/fa';
-const links = [
+
+interface IMenuLinksProps {
+  name: string;
+  icon: React.JSX.Element;
+  to: string;
+}
+
+const links: IMenuLinksProps[] = [
   { name: 'Home', icon: <FaHome className="nav--icon" />, to: '/' },
   {
     name: 'About',
