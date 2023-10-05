@@ -17,7 +17,7 @@ const ProjectItem = ({ img, title, details }: ProjectItemProps) => {
 
   return (
     <div className="portfolio__item">
-      <img src={img} alt="" className="portfilio__img" />
+      <img src={img} alt="" className="portfolio__img" />
 
       <div className="portfolio__hover" onClick={toggleModal}>
         <h3 className="portfolio__title">{title}</h3>

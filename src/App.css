@@ -29,29 +29,29 @@ body.dark {
   --bg-color: black;
 }
 
-body.aqua {
-  --first-color: #08fcd4;
+body.ciruela {
+  --first-color: #524653;
 }
 body.purple {
   --first-color: #b44cb4;
 }
 body.blue {
-  --first-color: #04a4fc;
+  --first-color: #5d94c7;
 }
-body.green {
-  --first-color: #acfc04;
+body.pink {
+  --first-color: #fa5894;
 }
 body.yellow {
-  --first-color: #fccc04;
+  --first-color: #b49721;
 }
 body.red {
   --first-color: #f43444;
 }
-body.pastelAqua {
-  --first-color: #a4d4cc;
+body.orange {
+  --first-color: #c94b0c;
 }
-body.pastelPurple {
-  --first-color: #d4b4d4;
+body.green {
+  --first-color: #75a480;
 }
 body.pastelGreen {
   --first-color: #dcf48c;
