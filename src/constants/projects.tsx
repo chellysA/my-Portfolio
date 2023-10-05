@@ -1,4 +1,5 @@
 import quoteRandomMachine from '../assets/projects-img/quoteRandomMachine.png';
+import moviePage from '../assets/projects-img/moviePage.png';
 import drumMachine from '../assets/projects-img/drumMachine.png';
 import calculator from '../assets/projects-img/calculator.png';
 import markDown from '../assets/projects-img/markDown.png';
@@ -16,6 +17,28 @@ interface ProjectsProps {
 export const projects: ProjectsProps[] = [
   {
     id: 1,
+    img: moviePage,
+    title: 'Movie Page',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Website.',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React, JS.',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: '<a href="https://movie-pages-git-master-chellysa.vercel.app/" target="blank"><u>https://codesandbox.io/s/mark-down-project-react-h6gc9j</u>></a>',
+      },
+    ],
+  },
+  {
+    id: 2,
     img: quoteRandomMachine,
     title: 'Quote Random Machine',
     details: [
@@ -37,7 +60,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: drumMachine,
     title: 'Drum Machine',
     details: [
@@ -55,7 +78,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     img: calculator,
     title: 'Calculator',
     details: [
@@ -77,7 +100,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     img: markDown,
     title: 'Mark Down',
     details: [
@@ -99,7 +122,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     img: surveyForm,
     title: 'Survey Form',
     details: [
