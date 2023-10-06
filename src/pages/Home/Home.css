@@ -53,7 +53,7 @@
   width: 100%;
   background-color: var(--first-color);
   top: -50%;
-  left: -83%;
+  left: -90%;
   transform: rotate(-15deg);
 }
 @media screen and (max-width: 880px) {
@@ -67,7 +67,7 @@
     display: block;
   }
   .home__title {
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(216, 199, 199, 0.575);
     padding: 10px;
     border-radius: 20px;
   }
@@ -79,7 +79,7 @@
     display: flex;
   }
   .home__description {
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(216, 199, 199, 0.575);
     padding: 10px;
     border-radius: 20px;
   }
@@ -87,4 +87,3 @@
     background-color: white;
   }
 }
-

@@ -2,8 +2,8 @@
 
 :root {
   --first-color: #f43444;
-  --title-color: #444647;
-  --text-color: grey;
+  --title-color: #343536;
+  --text-color: rgb(53, 50, 50);
   --text-white: white;
   --bg-color: grey;
   --body-color: rgb(255, 255, 255);
@@ -54,17 +54,17 @@ body.green {
   --first-color: #75a480;
 }
 body.pastelGreen {
-  --first-color: #dcf48c;
+  --first-color: #055f52;
 }
-body.pastelRed {
-  --first-color: #fc7454;
+body.pastelPink {
+  --first-color: #ff667c;
 }
 
-body.pastelYellow {
-  --first-color: #fcdc74;
+body.wine {
+  --first-color: #bf0a0d;
 }
-body.pastelBlue {
-  --first-color: #b4ccdc;
+body.pPink {
+  --first-color: #d17878;
 }
 * {
   margin: 0;
@@ -178,4 +178,3 @@ img:hover {
     left: 100px;
   }
 }
-

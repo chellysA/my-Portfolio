@@ -5,6 +5,7 @@ import calculator from '../assets/projects-img/calculator.png';
 import markDown from '../assets/projects-img/markDown.png';
 import surveyForm from '../assets/projects-img/surveyForm.png';
 import { FiExternalLink, FiFileText } from 'react-icons/fi';
+import { BsFileEarmarkCode } from 'react-icons/bs';
 import { FaCode } from 'react-icons/fa';
 
 interface ProjectsProps {
@@ -33,7 +34,12 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://movie-pages-git-master-chellysa.vercel.app/" target="blank"><u>https://codesandbox.io/s/mark-down-project-react-h6gc9j</u>></a>',
+        desc: '<a href="https://movie-pages-git-master-chellysa.vercel.app/" target="blank"><u>https://movie-pages-git-master-chellysa.vercel.app/</u>></a>',
+      },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://github.com/chellysA/moviePages.git" target="blank"><u>https://github.com/chellysA/moviePages.git</u>></a>',
       },
     ],
   },
@@ -57,6 +63,11 @@ export const projects: ProjectsProps[] = [
         title: 'Preview : ',
         desc: '<a href="https://codesandbox.io/s/quote-random-machine-i0vu8f" target="blank"><u>https://codesandbox.io/s/quote-random-machine-i0vu8f</u>></a>',
       },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://codesandbox.io/s/quote-random-machine-i0vu8f" target="blank"><u>https://codesandbox.io/s/quote-random-machine-i0vu8f</u>></a>',
+      },
     ],
   },
   {
@@ -73,6 +84,11 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
+        desc: '<a href="https://codesandbox.io/s/drum-machine-project-react-nwg21q" target="blank"><u>https://codesandbox.io/s/drum-machine-project-react-nwg21q</u>></a>',
+      },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
         desc: '<a href="https://codesandbox.io/s/drum-machine-project-react-nwg21q" target="blank"><u>https://codesandbox.io/s/drum-machine-project-react-nwg21q</u>></a>',
       },
     ],
@@ -97,6 +113,11 @@ export const projects: ProjectsProps[] = [
         title: 'Preview : ',
         desc: '<a href="https://codesandbox.io/s/calculator-project-react-wqker7" target="blank"><u>https://codesandbox.io/s/calculator-project-react-wqker7</u></a>',
       },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://codesandbox.io/s/calculator-project-react-wqker7" target="blank"><u>https://codesandbox.io/s/calculator-project-react-wqker7</u>></a>',
+      },
     ],
   },
   {
@@ -117,6 +138,11 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
+        desc: '<a href="https://codesandbox.io/s/mark-down-project-react-h6gc9j" target="blank"><u>https://codesandbox.io/s/mark-down-project-react-h6gc9j</u>></a>',
+      },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
         desc: '<a href="https://codesandbox.io/s/mark-down-project-react-h6gc9j" target="blank"><u>https://codesandbox.io/s/mark-down-project-react-h6gc9j</u>></a>',
       },
     ],
@@ -141,7 +167,11 @@ export const projects: ProjectsProps[] = [
         title: 'Preview : ',
         desc: '<a href="https://codesandbox.io/s/form-react-project-h6kdlx" target="blank"><u>https://codesandbox.io/s/form-react-project-h6kdlx</u></a>',
       },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://codesandbox.io/s/form-react-project-h6kdlx" target="blank"><u>https://codesandbox.io/s/form-react-project-h6kdlx</u>></a>',
+      },
     ],
   },
 ];
-
