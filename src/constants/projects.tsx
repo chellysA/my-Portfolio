@@ -34,12 +34,12 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://movie-pages-git-master-chellysa.vercel.app/" target="blank"><u>https://movie-pages-git-master-chellysa.vercel.app/</u>></a>',
+        desc: '<a href="https://movie-pages-git-master-chellysa.vercel.app/" target="blank"><u>Click here!</u>></a>',
       },
       {
         icon: <BsFileEarmarkCode />,
         title: 'Repository : ',
-        desc: '<a href="https://github.com/chellysA/moviePages.git" target="blank"><u>https://github.com/chellysA/moviePages.git</u>></a>',
+        desc: '<a href="https://github.com/chellysA/moviePages.git" target="blank"><u>Click here!</u>></a>',
       },
     ],
   },
@@ -61,12 +61,12 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://codesandbox.io/s/quote-random-machine-i0vu8f" target="blank"><u>https://codesandbox.io/s/quote-random-machine-i0vu8f</u>></a>',
+        desc: '<a href="https://codesandbox.io/s/quote-random-machine-i0vu8f" target="blank"><u>Click here!</u>></a>',
       },
       {
         icon: <BsFileEarmarkCode />,
         title: 'Repository : ',
-        desc: '<a href="https://codesandbox.io/s/quote-random-machine-i0vu8f" target="blank"><u>https://codesandbox.io/s/quote-random-machine-i0vu8f</u>></a>',
+        desc: '<a href="https://codesandbox.io/s/quote-random-machine-i0vu8f" target="blank"><u>Click here!</u>></a>',
       },
     ],
   },
