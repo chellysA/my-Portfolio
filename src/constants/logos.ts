@@ -7,6 +7,7 @@ import npm from '../assets/logos/npm.png';
 import vscode from '../assets/logos/vscode.png';
 import hookform from '../assets/logos/hookform.png';
 import typescript from '../assets/logos/typescript.png';
+import nextLogo from "../assets/logos/nextLogo.png"
 
 interface LogosProps {
   id: number;
@@ -56,6 +57,11 @@ const logos: LogosProps[] = [
     src: typescript,
     alt: 'typescript',
   },
+  {
+    id: 10,
+    src: nextLogo,
+    alt: 'next'
+  }
 ];
 
 export default logos;
