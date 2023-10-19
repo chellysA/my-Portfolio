@@ -23,8 +23,8 @@ const ThemeColor = () => {
         <div className="theme__container grid">
           {themes.map(({ img, color }, index) => {
             return (
-              <div key={index} onClick={() => selectColor(color)}>
-                <img src={img} alt={color} className="theme__img" />
+              <div key={index} onClick={() => selectColor(color)} >
+                <img src={img} alt={color} className="theme__img" data-aos="fade-down" data-aos-delay={index * 150} />
               </div>
             );
           })}

@@ -16,13 +16,7 @@ const ProjectItem = ({ img, title, details }: ProjectItemProps) => {
   };
 
   return (
-    <div className="portfolio__item">
-      <img src={img} alt="" className="portfolio__img" />
-
-      <div className="portfolio__hover" onClick={toggleModal}>
-        <h3 className="portfolio__title">{title}</h3>
-      </div>
-
+    <>
       <Modal isOpen={modal} onClose={toggleModal}>
         <h3 className="modal__title">{title}</h3>
         <ul className="modal__list grid">
@@ -39,11 +33,17 @@ const ProjectItem = ({ img, title, details }: ProjectItemProps) => {
             );
           })}
         </ul>
-        <img src={img} alt="" />
+        <img src={img} alt="" data-aos="zoom-in" data-aos-delay="200"/>
       </Modal>
-    </div>
+      <div className="portfolio__item" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="1500">
+        <img src={img} alt="" className="portfolio__img" />
+
+        <div className="portfolio__hover" onClick={toggleModal}>
+          <h3 className="portfolio__title">{title}</h3>
+        </div>
+      </div>
+    </>
   );
 };
 
 export default ProjectItem;
-

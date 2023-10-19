@@ -8,7 +8,7 @@ const Pictures: React.FC = () => {
       {album.map(({ src, alt }, index) => {
         return (
           <div key={index}>
-            <img src={src} alt={alt} className="style__img" />
+            <img src={src} alt={alt} className="style__img" data-aos="flip-left"/>
           </div>
         );
       })}
