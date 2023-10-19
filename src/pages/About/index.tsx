@@ -11,7 +11,7 @@ const About: React.FC = () => {
   return (
     <main className="section container">
       <section className="about">
-        <h2 className="section__title">
+        <h2 className="section__title" data-aos="fade-right">
           About <span>Me</span>
         </h2>
         <div className="about__container grid">
@@ -21,7 +21,7 @@ const About: React.FC = () => {
             <ul className="list__info grid">
               <Info />
             </ul>
-            <div>
+            <div data-aos="zoom-in-down" data-aos-easing="ease-in-out-back">
               <a href={cvChellysCastillo} download="cvChellysCastillo" className="button">
                 Download CV
                 <span className="button__icon">

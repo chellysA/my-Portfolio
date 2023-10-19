@@ -9,12 +9,15 @@ interface ModalProps {
 }
 
 const Modal = ({ children, onClose, isOpen }: ModalProps) => {
+  const stopPropagation = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    e.stopPropagation();
+  };
   return (
     <>
       {isOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <img src={closeIcon} alt="" className="modal__close" onClick={onClose} />
+        <div className="modal" onClick={onClose} >
+          <div className="modal-content" onClick={stopPropagation} data-aos="zoom-in">
+            <img src={closeIcon} alt="" className="modal__close" onClick={onClose}/>
             {children}
           </div>
         </div>

@@ -6,13 +6,13 @@ import './Portfolio.css';
 const Portfolio: React.FC = () => {
   return (
     <section className="portfolio section">
-      <h2 className="section__title">
+      <h2 className="section__title" data-aos="fade-right">
         My <span>Portfolio</span>
       </h2>
 
       <div className="portfolio__container container grid">
         {projects.map((item) => {
-          return <ProjectItem key={item.id} {...item} />;
+          return <ProjectItem key={item.id} {...item}/>;
         })}
       </div>
     </section>
