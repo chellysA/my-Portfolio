@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 import parse from 'html-react-parser';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 interface ProjectItemProps {
   img: string;
@@ -10,18 +11,19 @@ interface ProjectItemProps {
 
 const ProjectItem = ({ img, title, details }: ProjectItemProps) => {
   const [modal, setModal] = useState<boolean>(false);
+  const mobile = useIsMobile()
 
   const toggleModal = () => {
     setModal(!modal);
   };
-
+console.log(mobile)
   return (
     <div className="portfolio__item">
-      <img src={img} alt="" className="portfolio__img" />
+      <img src={img} alt="" className="portfolio__img" onClick={toggleModal}/>
 
-      <div className="portfolio__hover" onClick={toggleModal}>
+     {!mobile && (<div className="portfolio__hover" >
         <h3 className="portfolio__title">{title}</h3>
-      </div>
+      </div>)}
 
       <Modal isOpen={modal} onClose={toggleModal}>
         <h3 className="modal__title">{title}</h3>
