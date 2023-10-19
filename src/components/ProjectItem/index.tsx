@@ -19,13 +19,6 @@ const ProjectItem = ({ img, title, details }: ProjectItemProps) => {
 console.log(mobile)
   return (
     <>
-    <div className="portfolio__item">
-      <img src={img} alt="" className="portfolio__img" onClick={toggleModal}/>
-
-     {!mobile && (<div className="portfolio__hover" >
-        <h3 className="portfolio__title">{title}</h3>
-      </div>)}
-
       <Modal isOpen={modal} onClose={toggleModal}>
         <h3 className="modal__title">{title}</h3>
         <ul className="modal__list grid">
@@ -44,13 +37,12 @@ console.log(mobile)
         </ul>
         <img src={img} alt="" data-aos="zoom-in" data-aos-delay="200"/>
       </Modal>
-      <div className="portfolio__item" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="1500">
+      <div onClick={toggleModal} className="portfolio__item" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="1500">
         <img src={img} alt="" className="portfolio__img" />
 
-        <div className="portfolio__hover" onClick={toggleModal}>
+       {!mobile && <div className="portfolio__hover" >
           <h3 className="portfolio__title">{title}</h3>
-        </div>
-      </div>
+        </div>}
       </div>
     </>
   );
