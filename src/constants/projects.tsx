@@ -4,6 +4,7 @@ import drumMachine from '../assets/projects-img/drumMachine.png';
 import calculator from '../assets/projects-img/calculator.png';
 import markDown from '../assets/projects-img/markDown.png';
 import surveyForm from '../assets/projects-img/surveyForm.png';
+import universityLandingPage from '../assets/projects-img/universityLandingPage.jpeg'
 import { FiExternalLink, FiFileText } from 'react-icons/fi';
 import { BsFileEarmarkCode } from 'react-icons/bs';
 import { FaCode } from 'react-icons/fa';
@@ -45,6 +46,33 @@ export const projects: ProjectsProps[] = [
   },
   {
     id: 2,
+    img: universityLandingPage,
+    title: 'University Landing Page',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Website.',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'J Query, JS.',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: '<a href="https://university-page-snowy.vercel.app/" target="blank"><u>https://university-page-snowy.vercel.app/</u></a>',
+      },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://github.com/chellysA/universityPage" target="blank"><u>https://github.com/chellysA/universityPage</u>></a>',
+      },
+    ],
+  },
+  {
+    id: 3,
     img: quoteRandomMachine,
     title: 'Quote Random Machine',
     details: [
@@ -71,7 +99,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     img: drumMachine,
     title: 'Drum Machine',
     details: [
@@ -94,7 +122,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     img: calculator,
     title: 'Calculator',
     details: [
@@ -121,7 +149,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     img: markDown,
     title: 'Mark Down',
     details: [
@@ -148,7 +176,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     img: surveyForm,
     title: 'Survey Form',
     details: [
