@@ -59,7 +59,7 @@ const ThemeProviders = ({ children }: IThemeProvidersProps) => {
     if (mode && color) {
       document.querySelector('body')?.classList.add(mode, color);
     } else {
-      document.querySelector('body')?.classList.add(LIGHT, 'red');
+      document.querySelector('body')?.classList.add(LIGHT, 'pastelGreen');
     }
   });
 
@@ -72,4 +72,3 @@ const ThemeProviders = ({ children }: IThemeProvidersProps) => {
 };
 
 export default ThemeProviders;
-

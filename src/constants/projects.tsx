@@ -4,7 +4,8 @@ import drumMachine from '../assets/projects-img/drumMachine.png';
 import calculator from '../assets/projects-img/calculator.png';
 import markDown from '../assets/projects-img/markDown.png';
 import surveyForm from '../assets/projects-img/surveyForm.png';
-import universityLandingPage from '../assets/projects-img/universityLandingPage.jpeg'
+import swordVoiceAcademy from '../assets/projects-img/swordVoiceAcademy.png';
+import universityLandingPage from '../assets/projects-img/universityLandingPage.jpeg';
 import { FiExternalLink, FiFileText } from 'react-icons/fi';
 import { BsFileEarmarkCode } from 'react-icons/bs';
 import { FaCode } from 'react-icons/fa';
@@ -62,12 +63,35 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://university-page-snowy.vercel.app/" target="blank"><u>https://university-page-snowy.vercel.app/</u></a>',
+        desc: '<a href="https://university-page-snowy.vercel.app/" target="blank"><u>Click here!</u></a>',
       },
       {
         icon: <BsFileEarmarkCode />,
         title: 'Repository : ',
-        desc: '<a href="https://github.com/chellysA/universityPage" target="blank"><u>https://github.com/chellysA/universityPage</u>></a>',
+        desc: '<a href="https://github.com/chellysA/universityPage" target="blank"><u>Click here!</u>></a>',
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: swordVoiceAcademy,
+    title: 'Sword Voice Academy',
+    details: [
+      { icon: <FiFileText />, title: 'Project : ', desc: 'Website.' },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React, JS.',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: '<a href="https://swordvoice-academy.vercel.app" target="blank"><u>Click here!</u>></a>',
+      },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://github.com/ilemarandrade/landing-swordvoice-2.0" target="blank"><u>Click here!</u>></a>',
       },
     ],
   },
@@ -112,12 +136,12 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://codesandbox.io/s/drum-machine-project-react-nwg21q" target="blank"><u>https://codesandbox.io/s/drum-machine-project-react-nwg21q</u>></a>',
+        desc: '<a https://swordvoice-academy.vercel.app/" target="blank"><u>Click here!</u>></a>',
       },
       {
         icon: <BsFileEarmarkCode />,
         title: 'Repository : ',
-        desc: '<a href="https://codesandbox.io/s/drum-machine-project-react-nwg21q" target="blank"><u>https://codesandbox.io/s/drum-machine-project-react-nwg21q</u>></a>',
+        desc: '<a https://swordvoice-academy.vercel.app/" target="blank"><u>Click here!</u>></a>',
       },
     ],
   },
@@ -139,12 +163,12 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://codesandbox.io/s/calculator-project-react-wqker7" target="blank"><u>https://codesandbox.io/s/calculator-project-react-wqker7</u></a>',
+        desc: '<a href="https://codesandbox.io/s/calculator-project-react-wqker7" target="blank"><u>Click here!</u></a>',
       },
       {
         icon: <BsFileEarmarkCode />,
         title: 'Repository : ',
-        desc: '<a href="https://codesandbox.io/s/calculator-project-react-wqker7" target="blank"><u>https://codesandbox.io/s/calculator-project-react-wqker7</u>></a>',
+        desc: '<a href="https://codesandbox.io/s/calculator-project-react-wqker7" target="blank"><u>Click here!</u>></a>',
       },
     ],
   },
@@ -166,12 +190,12 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://codesandbox.io/s/mark-down-project-react-h6gc9j" target="blank"><u>https://codesandbox.io/s/mark-down-project-react-h6gc9j</u>></a>',
+        desc: '<a href="https://codesandbox.io/s/mark-down-project-react-h6gc9j" target="blank"><u>Click here!</u>></a>',
       },
       {
         icon: <BsFileEarmarkCode />,
         title: 'Repository : ',
-        desc: '<a href="https://codesandbox.io/s/mark-down-project-react-h6gc9j" target="blank"><u>https://codesandbox.io/s/mark-down-project-react-h6gc9j</u>></a>',
+        desc: '<a href="https://codesandbox.io/s/mark-down-project-react-h6gc9j" target="blank"><u>Click here!</u>></a>',
       },
     ],
   },
@@ -193,12 +217,35 @@ export const projects: ProjectsProps[] = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: '<a href="https://codesandbox.io/s/form-react-project-h6kdlx" target="blank"><u>https://codesandbox.io/s/form-react-project-h6kdlx</u></a>',
+        desc: '<a href="https://codesandbox.io/s/form-react-project-h6kdlx" target="blank"><u>Click here!</u></a>',
       },
       {
         icon: <BsFileEarmarkCode />,
         title: 'Repository : ',
-        desc: '<a href="https://codesandbox.io/s/form-react-project-h6kdlx" target="blank"><u>https://codesandbox.io/s/form-react-project-h6kdlx</u>></a>',
+        desc: '<a href="https://codesandbox.io/s/form-react-project-h6kdlx" target="blank"><u>Click here!</u>></a>',
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: drumMachine,
+    title: 'Drum Machine',
+    details: [
+      { icon: <FiFileText />, title: 'Project : ', desc: 'Website.' },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React, JS.',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: '<a href="https://codesandbox.io/s/drum-machine-project-react-nwg21q" target="blank"><u>Click here!</u>></a>',
+      },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://codesandbox.io/s/drum-machine-project-react-nwg21q" target="blank"><u>Click here!</u>></a>',
       },
     ],
   },

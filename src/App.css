@@ -171,6 +171,6 @@ img {
 }
 @media screen and (max-width: 680px) {
   .button {
-    left: 100px;
+    left: 80px;
   }
 }

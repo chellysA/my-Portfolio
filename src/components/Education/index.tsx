@@ -12,7 +12,6 @@ const Education: React.FC = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
     arrows: false,
   };
 
@@ -32,4 +31,3 @@ const Education: React.FC = () => {
 };
 
 export default Education;
-
