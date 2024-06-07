@@ -5,7 +5,7 @@ import './About.css';
 import Pictures from '../../components/Pictures';
 import Skills from '../../components/Skills';
 import Education from '../../components/Education';
-import cvChellysCastillo from '../../assets/cv/cvChellysCastillo.pdf';
+import cvChellysCastillo from '../../assets/cv/cvChellys.pdf';
 
 const About: React.FC = () => {
   return (
