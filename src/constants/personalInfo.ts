@@ -13,7 +13,7 @@ export const personalInfo1: PersonalInfoProps[] = [
 
 export const personalInfo2: PersonalInfoProps[] = [
   { id: 6, title: 'Address :', description: ' Caracas-Venezuela.' },
-  { id: 7, title: 'Phone :', description: ' +58414-4505536' },
+  { id: 7, title: 'Phone :', description: ' +58424-275-4685' },
   { id: 8, title: 'Email :', description: ' chellys.castillo@gmail.com' },
   { id: 9, title: 'Languages :', description: ' Spanish, English.' },
 ];
