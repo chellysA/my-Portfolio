@@ -123,29 +123,6 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 4,
-    img: drumMachine,
-    title: 'Drum Machine',
-    details: [
-      { icon: <FiFileText />, title: 'Project : ', desc: 'Website.' },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React, JS.',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: '<a https://swordvoice-academy.vercel.app/" target="blank"><u>Click here!</u>></a>',
-      },
-      {
-        icon: <BsFileEarmarkCode />,
-        title: 'Repository : ',
-        desc: '<a https://swordvoice-academy.vercel.app/" target="blank"><u>Click here!</u>></a>',
-      },
-    ],
-  },
-  {
     id: 5,
     img: calculator,
     title: 'Calculator',

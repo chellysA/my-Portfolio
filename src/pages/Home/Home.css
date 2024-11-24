@@ -29,6 +29,7 @@
   font-size: var(--h1-font-size);
   line-height: 1.24;
   padding-left: 70px;
+  margin-top: 20px;
 }
 .home__title::before {
   content: '';
