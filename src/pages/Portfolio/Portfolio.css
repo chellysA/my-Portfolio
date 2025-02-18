@@ -1,7 +1,7 @@
 .portfolio__container {
   grid-template-columns: repeat(2, 1fr);
-  margin-inline: 160px;
 }
+
 .portfolio__item {
   position: relative;
   border-radius: 10px;
@@ -82,4 +82,3 @@
     font-size: var(--h2-font-size);
   }
 }
-

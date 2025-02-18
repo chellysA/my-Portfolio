@@ -6,6 +6,7 @@ import markDown from '../assets/projects-img/markDown.png';
 import surveyForm from '../assets/projects-img/surveyForm.png';
 import swordVoiceAcademy from '../assets/projects-img/swordVoiceAcademy.png';
 import universityLandingPage from '../assets/projects-img/universityLandingPage.jpeg';
+import articlesPage from '../assets/projects-img/articlesPage.png';
 import { FiExternalLink, FiFileText } from 'react-icons/fi';
 import { BsFileEarmarkCode } from 'react-icons/bs';
 import { FaCode } from 'react-icons/fa';
@@ -20,6 +21,33 @@ interface ProjectsProps {
 export const projects: ProjectsProps[] = [
   {
     id: 1,
+    img: articlesPage,
+    title: 'Articles Page',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project :',
+        desc: 'Website.',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'JS, web components.',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: '<a href="https://codesandbox.io/p/github/chellysA/frontend-test-videsk/main?file=%2F.codesandbox%2Ftasks.json&workspaceId=ws_ES1bWRUVUZK9esDvrEsLSf" target="blank"><u>Click here!</u>></a>',
+      },
+      {
+        icon: <BsFileEarmarkCode />,
+        title: 'Repository : ',
+        desc: '<a href="https://github.com/chellysA/frontend-test-videsk" target="blank"><u>Click here!</u>></a>',
+      },
+    ],
+  },
+  {
+    id: 2,
     img: moviePage,
     title: 'Movie Page',
     details: [
@@ -46,7 +74,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: universityLandingPage,
     title: 'University Landing Page',
     details: [
@@ -96,7 +124,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     img: quoteRandomMachine,
     title: 'Quote Random Machine',
     details: [
@@ -123,7 +151,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     img: calculator,
     title: 'Calculator',
     details: [
@@ -150,7 +178,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     img: markDown,
     title: 'Mark Down',
     details: [
@@ -177,7 +205,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     img: surveyForm,
     title: 'Survey Form',
     details: [
@@ -204,7 +232,7 @@ export const projects: ProjectsProps[] = [
     ],
   },
   {
-    id: 4,
+    id: 9,
     img: drumMachine,
     title: 'Drum Machine',
     details: [
